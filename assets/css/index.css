@@ -1,0 +1,26 @@
+
+body {
+  padding-top: 56px;
+}
+
+.display-4{
+  font-family: 'Play', sans-serif;
+}
+
+.card-img-custom{
+  width: 346px;
+  height: 250px;
+}
+
+.card-custom{
+  /* Custom CSS for card */
+  transition: transform .5s;
+}
+
+.card-custom:hover{
+  transform: scale(1.1);
+}
+.img-icon{
+  width: 32px;
+  height: 32px;
+}

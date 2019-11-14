@@ -1,0 +1,27 @@
+body{
+    background-color: #ffffff;
+}
+.logo{
+    margin-top: 150px;
+    text-align: center;
+}
+.img-icon{
+    /* icon in the nav bar */
+    width: 32px;
+    height: 32px;
+  }
+.img-logo{
+    /* logo in the body */
+    width: 128px;
+    height: 128px;
+}
+.wow{
+    
+}
+.org-name{
+    text-align: center;
+    font-size: x-large;
+    color: #007BFF;
+    font-family: 'Play', sans-serif;
+}
+
