@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="assets/icons/bc2i-64.ico">
 
-    <title>Login | BC2I</title>
+    <title>Admin | BC2I</title>
 
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/"> -->
 
@@ -18,11 +18,13 @@
     <!-- Custom CSS -->
     <link href="assets/css/login.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+      <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
-
 
   </head>
   <body>
@@ -30,26 +32,16 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container">
               <img class="img-icon" src="assets/icons/bc2i-64.ico" alt="img-bc2i">&nbsp
-              <a style="font-family: 'Play', sans-serif;" class="navbar-brand p-1" href="index.php">BC2I</a>
+              <a style="font-family: 'Play', sans-serif;"  class="navbar-brand p-1" href="index.php">BC2I</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php">Home</a>
+                <a class="nav-link" href="index.php"><i class="fas fa-home"></i></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.php">About</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Login
-                      <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contact</a>
-                </li>
+                
               </ul>
             </div>
           </div>
@@ -58,16 +50,6 @@
 
 
 <div class="container">
-<?php
-if(isset($_GET['registered']))
-{?>
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-  <center>You have registered successfully. Login now!</center>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<?php }?>
 <?php
 if(isset($_GET['authentication']))
 {?>
@@ -83,15 +65,15 @@ if(isset($_GET['authentication']))
 <div class="col-md-3">
 </div>
 <div class="col col-md-6 col-md-offset-4">
-   <form class="form-signin" action="authenticate-login.php" method="POST">
+   <form class="form-signin" action="authenticate-admin.php" method="POST">
       <div class="text-center mb-4">
         <img class="mb-4" src="assets/icons/secure.png" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal login-title">LOGIN</h1>
+        <h1 style="font-family: 'Teko', sans-serif;font-size: 40px;" class="h3 mb-3 font-weight-normal">ADMIN LOGIN</h1>
       </div>
 
       <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control form-custom username" name="username" placeholder="Email address"  required autofocus>
-        <label for="inputEmail">Email address</label>
+        <input type="text" id="inputEmail" class="form-control form-custom username" name="adminid" placeholder="Admin ID"  required autofocus>
+        <label for="inputEmail">Admin ID</label>
       </div>
 
       <div class="form-label-group">
@@ -99,13 +81,9 @@ if(isset($_GET['authentication']))
         <label for="inputPassword">Password</label>
       </div>
 
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit"><span class="submit-text">SUBMIT</span></button>
-      <p class="pt-2 mt-3 mb-3">Not registered?&nbsp;<a href="register.php"><strong><span class="register-now-text">Register Now</span></strong></a></p>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">SUBMIT</button>
+      
     </form>
 </div>
 <div class="col-md-3">
@@ -118,13 +96,10 @@ if(isset($_GET['authentication']))
       <br>
       <br>
       <br>
-      <br>
-      <br>
     </div>
-    <footer class="bg-dark mt-5" id="footer">
+    <footer class="bg-dark" id="footer">
         <div class="container">
           <p class="m-0 text-center text-white">Copyright &copy; BC2I 2019</p>
-          <p class="text-center text-white">Bureau of Cyber Crime Investigation</p>
         </div>
         <!-- end of Footer container -->
       </footer>

@@ -1,0 +1,26 @@
+.img-icon{
+    width: 32px;
+    height: 32px;
+  }
+  /* body{
+    
+  } */
+  .custom{
+    background-color: rgba(256, 256, 256, 0.4);
+    border-radius: 20px;
+    margin-block-start: 80px;
+  }
+
+  .custom-card{
+      width: 400px;
+  }
+
+  #drpdwn:hover{
+    color: black;
+}
+
+.dropdown-menu > a:hover{
+    color: black;
+    background-color: #007BFF;
+    background-image: none;
+}

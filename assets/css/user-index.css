@@ -1,0 +1,16 @@
+#drpdwn:hover{
+    color: black;
+}
+
+.dropdown-menu > a:hover{
+    color: black;
+    background-color: #007BFF;
+    background-image: none;
+}
+
+
+
+/* .custom-header{
+    background: url(https://www.safesystems.com/wp-content/uploads/2017/11/Header-Blog-Image-2017-11-Combatting-Cybercrime.png) 100%;
+    background-size: cover;
+} */

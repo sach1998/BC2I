@@ -24,3 +24,12 @@ body {
   width: 32px;
   height: 32px;
 }
+
+.head{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcUt1zr0SitCXagydia1Fkha7dbfLhZBpQV_jUrotWtKt4hQh&s");
+}
+
+.time{
+  padding: 3px;
+  border-radius: 3px;
+}

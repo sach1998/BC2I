@@ -1,5 +1,14 @@
+html{
+    height: 100%;
+}
 body{
-    background-color: #ffffff;
+    height: 100%;
+    background-image: url("../images/backsecure.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,.7);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .logo{
     margin-top: 150px;
@@ -14,14 +23,27 @@ body{
     /* logo in the body */
     width: 128px;
     height: 128px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222);
 }
-.wow{
+/* .wow{
     
-}
+} */
+
+/* .custom{
+
+} */
+
 .org-name{
     text-align: center;
     font-size: x-large;
     color: #007BFF;
     font-family: 'Play', sans-serif;
+    text-shadow: 5px 2px 5px #fff;
+}
+.content{
+    font-family: 'Martel Sans', sans-serif;
+    color: #F25F30;
+    text-shadow: 3px 2px 4px yellow;
 }
 
